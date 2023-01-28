@@ -1,0 +1,312 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Dark-cyan-hover:hsl(156, 42%, 18%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --paragraph: 14px;
+
+    -Family-M: [Montserrat](https://fonts.google.com/specimen/Montserrat);
+    -Weights-M: 500, 700;
+
+    -Family-F: [Fraunces](https://fonts.google.com/specimen/Fraunces);
+    -Weights-F: 700;
+
+}
+
+body{
+    height: 100vh;
+    background-color: var(--Cream);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:1440px){
+    body .container{
+        height: auto;
+    
+        display: flex;
+    
+        border-radius: 8px;
+        
+    }
+    
+    body .container .contant-img{
+        flex: 1 1 250px;
+        background-image: url(../images/image-product-desktop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        border-radius: 8px 0px 0px 8px; 
+    }
+    
+    body .container .contant-text{
+        background-color: var(--White);
+        flex:2 1 1px;
+    
+        border-radius: 0px 8px 8px 0px; 
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    
+        padding: 1.5rem 2.5rem ;
+    }
+    
+    body .container .contant-text h2{
+        font-size: 1rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: 100;
+        color: var(--Dark-grayish-blue);
+    }
+    
+    body .container .contant-text h1{
+        font-size: 1.9rem;
+        font-weight: 700;
+        
+       
+    }
+    
+    body .container .contant-text p{
+        width: 80%;
+        font-size: var(--paragraph);
+        line-height: 1.9;
+        color: var(--Dark-grayish-blue);
+    }
+    
+    body .container .contant-text .preco{
+        flex-grow:1px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: initial;
+    }
+    
+    body .container .contant-text .preco span{
+        font-size: 1.9rem;
+        margin-right: 20px;
+        font-weight: 700;
+        color: var(--Dark-cyan);
+    }
+    
+    body .container .contant-text .preco  small{ 
+        font-size: 1rem;
+        margin-right: 20px;
+        font-weight: 500;
+        color: var(--Dark-grayish-blue);
+    }
+    
+    body .container .contant-text button{
+        padding: 15px 15px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--Dark-cyan);
+        color:var(--White);
+    }
+    body .container .contant-text button:hover{
+        padding: 15px 15px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--Dark-cyan-hover);
+        color:var(--White);
+    }
+}
+
+
+@media (max-width:768px){
+    body .container{
+
+        width: 400px;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+    
+        border-radius: 8px;
+        
+    }
+
+    body .container .contant-img{
+        flex: 1 1 250px;
+        background-image: url(../images/image-product-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        border-radius: 8px 8px 0px 0px; 
+    }
+    body .container .contant-text{
+        background-color: var(--White);
+        flex:1 1 1px;
+    
+        border-radius:  0px 0px 8px 8px; 
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    
+        padding: 1.5rem 2.5rem ;
+        
+    }
+
+    body .container .contant-text h2{
+        font-size: 1rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: 100;
+        color: var(--Dark-grayish-blue);
+    }
+    
+    body .container .contant-text h1{
+        font-size: 1.9rem;
+        font-weight: 700;
+        
+       
+    }
+    
+    body .container .contant-text p{
+        font-size: var(--paragraph);
+        line-height: 1.5;
+        color: var(--Dark-grayish-blue);
+    }
+    
+    body .container .contant-text .preco{
+        flex-grow:1px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: initial;
+    }
+    
+    body .container .contant-text .preco span{
+        font-size: 1.9rem;
+        margin-right: 20px;
+        font-weight: 700;
+        color: var(--Dark-cyan);
+    }
+    
+    body .container .contant-text .preco  small{ 
+        font-size: 1rem;
+        margin-right: 20px;
+        font-weight: 500;
+        color: var(--Dark-grayish-blue);
+    }
+    
+    body .container .contant-text button{
+        padding: 15px 15px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--Dark-cyan);
+        color:var(--White);
+    }
+
+}
+@media (max-width:375px){
+    body .container{
+
+        width: 300px;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+    
+        border-radius: 8px;
+        
+    }
+
+    body .container .contant-img{
+        flex: 1 1 250px;
+        background-image: url(../images/image-product-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        border-radius: 8px 8px 0px 0px; 
+    }
+    body .container .contant-text{
+        background-color: var(--White);
+        flex:1 1 1px;
+    
+        border-radius: 0px 0px 8px 8px; 
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    
+        padding: 1.5rem 2.5rem ;
+    }
+
+    body .container .contant-text h2{
+        font-size: 1rem;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: 100;
+        color: var(--Dark-grayish-blue);
+    }
+    
+    body .container .contant-text h1{
+        font-size: 1.9rem;
+        font-weight: 700;
+        
+       
+    }
+    
+    body .container .contant-text p{
+        font-size: var(--paragraph);
+        line-height: 1.5;
+        color: var(--Dark-grayish-blue);
+    }
+    
+    body .container .contant-text .preco{
+        flex-grow:1px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: initial;
+    }
+    
+    body .container .contant-text .preco span{
+        font-size: 1.9rem;
+        margin-right: 20px;
+        font-weight: 700;
+        color: var(--Dark-cyan);
+    }
+    
+    body .container .contant-text .preco  small{ 
+        font-size: 1rem;
+        margin-right: 20px;
+        font-weight: 500;
+        color: var(--Dark-grayish-blue);
+    }
+    
+    body .container .contant-text button{
+        padding: 15px 15px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--Dark-cyan);
+        color:var(--White);
+    }
+    
+    
+}
